@@ -1,2 +1,5 @@
-# genus-post-type
-Custom post type for genera
+# Genus Post Type
+Custom WordPress post type for genera.
+
+## Installaion
+Download and put in your plugins directory.
