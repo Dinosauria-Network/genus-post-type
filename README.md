@@ -10,4 +10,4 @@ Download and put in your plugins directory.
 Read our [contribution guidelines](/.github/CONTRIBUTING.md).
 
 ## License
-GPLv2
+[GPLv2](https://www.gnu.org/licenses/gpl-2.0.html)
