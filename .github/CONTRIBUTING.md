@@ -1,4 +1,4 @@
-## How to contribute to Ruby on Rails
+## How to contribute to Genus Post Type
 
 #### **Did you find a bug?**
 
