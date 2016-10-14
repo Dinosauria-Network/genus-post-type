@@ -5,3 +5,9 @@ Version 1.0
 
 ## Installaion
 Download and put in your plugins directory.
+
+## Contributing
+Read our [contribution guidelines](/.github/CONTRIBUTING.md).
+
+## License
+GPLv2
