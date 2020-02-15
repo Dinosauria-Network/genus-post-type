@@ -135,11 +135,12 @@ class Genus_Authority_Meta_Box {
 			switch ( $field['type'] ) {
 				default:
 					$input = sprintf(
-						'<input id="%s" name="%s" type="%s" value="%s">',
+						'<input id="%s" name="%s" type="%s" value="%s"%s>',
 						$field['id'],
 						$field['id'],
 						$field['type'],
-						$db_value
+						$db_value,
+						$field['min'] ? ' min="' . $field['min'] . '"' : ''
 					);
 			}
 			$output .= '<p>' . $label . '<br>' . $input . '</p>';
