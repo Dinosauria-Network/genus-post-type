@@ -1,7 +1,7 @@
 # Genus Post Type
-Custom WordPress post type for genera. Tested up to WordPress 4.5.
+Custom WordPress post type for genera. Tested up to WordPress 5.3.2.
 
-Version 1.0
+Version 1.1
 
 ## Installation
 Download and put in your plugins directory.
