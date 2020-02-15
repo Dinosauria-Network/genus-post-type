@@ -89,6 +89,12 @@ class Genus_Authority_Meta_Box {
 			'type' => 'number',
 			'pattern' => '[0-9]{7}',
 		),
+		array(
+			'id' => '_eol',
+			'label' => 'EOL ID No.',
+			'type' => 'number',
+			'pattern' => '[0-9]{7,8}',
+		),
 	);
 
 	/**
