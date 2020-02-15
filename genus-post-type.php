@@ -164,4 +164,7 @@ class Genus_Authority_Meta_Box {
 }
 new Genus_Authority_Meta_Box;
 
+// Include custom taxonomy for genus chronostratigraphy
+include_once 'inc/chronostratigraphy_taxonomy.php';
+
 ?>
