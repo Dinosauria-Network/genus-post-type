@@ -3,7 +3,7 @@
   Plugin Name: Genus Post type
   Plugin URI: https://dinosauria.net/
   Description: Declares a plugin that will create a custom post type displaying genera.
-  Version: 1.0
+  Version: 1.1
   Author: Alexander Bell
   Author URI: https://alexanderbell.info/
   License: GPLv2
@@ -70,6 +70,22 @@ class Genus_Authority_Meta_Box {
 			'id' => '_date',
 			'label' => 'Genus Date',
 			'type' => 'date',
+		),
+		array(
+			'id' => '_paleodb',
+			'label' => 'PaleoDB Taxon No.',
+			'type' => 'number',
+		),
+		array(
+			'id' => '_gbif',
+			'label' => 'GBIF ID No.',
+			'type' => 'number',
+		),
+		array(
+			'id' => '_irmng',
+			'label' => 'IRMNG Taxon No.',
+			'type' => 'number',
+			'min' => '1000000',
 		),
 	);
 
