@@ -75,17 +75,19 @@ class Genus_Authority_Meta_Box {
 			'id' => '_paleodb',
 			'label' => 'PaleoDB Taxon No.',
 			'type' => 'number',
+			'pattern' => '[0-9]{1,6}',
 		),
 		array(
 			'id' => '_gbif',
 			'label' => 'GBIF ID No.',
 			'type' => 'number',
+			'pattern' => '[0-9]{7}',
 		),
 		array(
 			'id' => '_irmng',
 			'label' => 'IRMNG Taxon No.',
 			'type' => 'number',
-			'min' => '1000000',
+			'pattern' => '[0-9]{7}',
 		),
 	);
 
@@ -140,7 +142,7 @@ class Genus_Authority_Meta_Box {
 						$field['id'],
 						$field['type'],
 						$db_value,
-						$field['min'] ? ' min="' . $field['min'] . '"' : ''
+						$field['pattern'] ? ' pattern="' . $field['pattern'] . '"' : ''
 					);
 			}
 			$output .= '<p>' . $label . '<br>' . $input . '</p>';
