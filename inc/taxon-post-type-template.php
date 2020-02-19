@@ -4,8 +4,8 @@
  */
 function taxon_post_type_add_template_to_select( $post_templates, $wp_theme, $post, $post_type ) {
 
-    // Add custom template named template-taxon.php to select dropdown 
-    $post_templates['template-taxon.php'] = __('Taxon');
+    // Add custom template named single-genus.php to select dropdown 
+    $post_templates['single-genus.php'] = __('Taxon');
 
     return $post_templates;
 }
@@ -20,12 +20,12 @@ add_filter( 'theme_page_templates', 'taxon_post_type_add_template_to_select', 10
  */
 function taxon_post_type_load_plugin_template( $template ) {
 
-    if(  get_page_template_slug() === 'template-taxon.php' ) {
+    if(  get_page_template_slug() === 'single-genus.php' ) {
 
-        if ( $theme_file = locate_template( array( 'template-taxon.php' ) ) ) {
+        if ( $theme_file = locate_template( array( 'single-genus.php' ) ) ) {
             $template = $theme_file;
         } else {
-            $template = plugin_dir_path( __FILE__ ) . 'template-taxon.php';
+            $template = plugin_dir_path( __FILE__ ) . 'single-genus.php';
         }
     }
 
