@@ -2,7 +2,7 @@
 /**
  * Add "Taxon" template to page attirbute template section.
  */
-function genus_post_type_add_template_to_select( $post_templates, $wp_theme, $post, $post_type ) {
+function taxon_post_type_add_template_to_select( $post_templates, $wp_theme, $post, $post_type ) {
 
     // Add custom template named template-taxon.php to select dropdown 
     $post_templates['template-taxon.php'] = __('Taxon');
@@ -10,7 +10,7 @@ function genus_post_type_add_template_to_select( $post_templates, $wp_theme, $po
     return $post_templates;
 }
 
-add_filter( 'theme_page_templates', 'genus_post_type_add_template_to_select', 10, 4 );
+add_filter( 'theme_page_templates', 'taxon_post_type_add_template_to_select', 10, 4 );
 
 
 /**
@@ -18,7 +18,7 @@ add_filter( 'theme_page_templates', 'genus_post_type_add_template_to_select', 10
  * template from theme directory and if not exist load it 
  * from root plugin directory.
  */
-function genus_post_type_load_plugin_template( $template ) {
+function taxon_post_type_load_plugin_template( $template ) {
 
     if(  get_page_template_slug() === 'template-taxon.php' ) {
 
@@ -36,4 +36,4 @@ function genus_post_type_load_plugin_template( $template ) {
     return $template;
 }
 
-add_filter( 'template_include', 'genus_post_type_load_plugin_template' );
+add_filter( 'template_include', 'taxon_post_type_load_plugin_template' );
