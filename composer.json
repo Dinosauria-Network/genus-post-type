@@ -1,0 +1,16 @@
+{
+  "name": "Dinosauria-Network/genus-post-type",
+  "description": "",
+  "keywords": ["wordpress", "plugin"],
+  "homepage": "https://github.com/Dinosauria-Network/genus-post-type",
+  "authors": [
+    {
+      "name": "Alexander Bell",
+      "homepage": "https://alexanderbell.info"
+    }
+  ],
+  "type": "wordpress-plugin",
+  "require": {
+    "php": ">=5.5"
+  }
+}
